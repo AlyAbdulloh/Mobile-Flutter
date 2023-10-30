@@ -113,11 +113,45 @@ class MyApp extends StatelessWidget {
                 height: 65,
                 width: 140,
                 child: Card(
-                  semanticContainer: true,
-                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                ),
+                    semanticContainer: true,
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                    child: Container(
+                      padding: EdgeInsets.only(left: 10, top: 12),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Your Balance',
+                                style: TextStyle(fontSize: 11),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                'Rp 10.184',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Icon(
+                                Icons.arrow_forward,
+                                size: 13,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    )),
               ),
               SizedBox(
                 height: 65,
@@ -127,6 +161,41 @@ class MyApp extends StatelessWidget {
                   clipBehavior: Clip.antiAliasWithSaveLayer,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
+                  child: Container(
+                    padding: EdgeInsets.only(left: 10, top: 12),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              'Bonus Balance',
+                              style: TextStyle(fontSize: 11),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              '0',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Icon(
+                              Icons.arrow_forward,
+                              size: 13,
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               )
             ],
@@ -248,6 +317,10 @@ class MyApp extends StatelessWidget {
                   // shadowColor: const Color.fromARGB(255, 27, 27, 27),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
+                  child: Image.asset(
+                    'asset/1.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -265,6 +338,10 @@ class MyApp extends StatelessWidget {
                   // shadowColor: const Color.fromARGB(255, 27, 27, 27),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
+                  child: Image.asset(
+                    'asset/2.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -282,6 +359,10 @@ class MyApp extends StatelessWidget {
                   // shadowColor: const Color.fromARGB(255, 27, 27, 27),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
+                  child: Image.asset(
+                    'asset/3.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -299,6 +380,10 @@ class MyApp extends StatelessWidget {
                   // shadowColor: const Color.fromARGB(255, 27, 27, 27),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
+                  child: Image.asset(
+                    'asset/4.jpg',
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
