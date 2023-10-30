@@ -401,7 +401,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: const Color.fromARGB(255, 224, 29, 15),
           ),
           body: Container(
-            color: Color.fromARGB(248, 235, 245, 243),
+            color: Color(0xFFF5F7F8),
             child: ListView(
               padding: EdgeInsets.all(15),
               children: [
