@@ -396,23 +396,40 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('LinkAja'),
-            backgroundColor: const Color.fromARGB(255, 224, 29, 15),
-          ),
-          body: Container(
-            color: Color(0xFFF5F7F8),
-            child: ListView(
-              padding: EdgeInsets.all(15),
-              children: [
-                topSection,
-                secondSection,
-                thirdSection,
-                fourSection,
-                fiveSection,
-              ],
+        appBar: AppBar(
+          title: Text('LinkAja'),
+          backgroundColor: const Color.fromARGB(255, 224, 29, 15),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
             ),
-          )),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.history),
+              label: 'History',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.paypal),
+              label: 'Pay',
+            ),
+          ],
+        ),
+        body: Container(
+          color: Color(0xFFF5F7F8),
+          child: ListView(
+            padding: EdgeInsets.all(15),
+            children: [
+              topSection,
+              secondSection,
+              thirdSection,
+              fourSection,
+              fiveSection,
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
